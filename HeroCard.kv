@@ -1,0 +1,477 @@
+#: include Main_part.kv
+#: include Main_part2.kv
+#: include Autorization.kv
+#: import NoTransition kivy.uix.screenmanager.NoTransition
+
+<HeroCard_Nutrition>
+    orientation: 'vertical'
+    name:'once'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from.size
+            radius: 24
+
+    MDLabel:
+        text:'Питание'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        id: eat
+        padding: 12,12
+        text:'Ешьте здоровую пищу. Вы - то, что вы едите.'
+
+
+
+<HeroCard_Physics>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from1
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from1.size
+            radius: 24
+
+    MDLabel:
+        text:'Физическая активность'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        padding: 12,12
+        text:'Будьте физически активным. Движение - это жизнь!'
+
+
+
+<HeroCard_Blood_Pressure>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from2
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from2.size
+            radius: 24
+
+    MDLabel:
+        text:'Давление'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        padding: 12,12
+        text:'Проверяйте артериальное давление каждый день.'
+
+
+
+<HeroCard_Meds>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Медикаменты'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        padding: 12,12
+        text:'Не забывайте принимать лекарства.'
+
+
+
+<HeroCard_Glukosa>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Глюкоза'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        padding: 12,12
+        text:'Измеряйте свой уровень глюкозы 4-7 раз в неделю.'
+
+
+<HeroCard_Statistics>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Статистика'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        padding: 12,12
+        text:'Отслеживайте свой прогресс.'
+
+
+<HeroCard_xe_calculator>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Калькулятор ХЕ'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+
+    MDLabel:
+        padding: 12,12
+        text:'Вычисляй хе продуктов самостоятельно.'
+
+<HeroCard_info>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "320dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Инфо'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H5'
+        halign: "center"
+        valign: "middle"
+
+    MDLabel:
+        padding: 12,12
+        text:'Удели время изучению болезни.'
+
+
+
+<HeroCard_diabet>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "285dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Сахарный диабет: что это такое?'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+
+<HeroCard_diapozon_sugar>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "280dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Диапозоны сахара в крови.'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+
+<HeroCard_symptoms>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "280dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Симптомы диабета.'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+
+<HeroCard_lechenie>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "250dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Лечение диабета.'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+
+<HeroCard_diagnostica>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "300dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Диагностика диабета.'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+
+<HeroCard_first_help>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "290dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Первая помощь при диабете.'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+
+<HeroCard_profilactica>
+    orientation: 'vertical'
+    size_hint: 1,None
+    height: "265dp"
+    elevation: 8
+    radius: 24
+    padding: 12
+
+    MDHeroFrom:
+        id: hero_from3
+        tag: root.tag
+        size_hint: 1, None
+        height: root.height / 1.8
+
+        FitImage:
+            source: root.source
+            size_hint: None,None
+            size: hero_from3.size
+            radius: 24
+
+    MDLabel:
+        text:'Профилактика диабета.'
+        bold: True
+        adaptive_height: True
+        padding: 12,12
+        font_style: 'H6'
+
+
+<Popups>:
+    id:pop
+
+
+
+
